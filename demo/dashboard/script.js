@@ -29,14 +29,14 @@ angular.module('app')
                     sizeY: 1,
                     sizeX: 1,
                     name: 'Widget 1',
-                    color: 'rgba(255,0,0,.2)'
+                    colorId: 1
                 }, {
                     col: 2,
                     row: 1,
                     sizeY: 1,
                     sizeX: 1,
                     name: 'Widget 2',
-                    color: 'rgba(0,255,0,.2)'
+                    colorId: 2
 
                 }]
             },
@@ -64,10 +64,12 @@ angular.module('app')
         };
 
         $scope.addWidget = function() {
+            var cId = $scope.dashboard.widgets.length + 1;
             $scope.dashboard.widgets.push({
-                name: "New Widget",
+                name: "Widget "+cId,
                 sizeX: 1,
-                sizeY: 1
+                sizeY: 1,
+                colorId: cId
             });
         };
 

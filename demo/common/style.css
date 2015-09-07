@@ -11,7 +11,7 @@ input {
 }
 .container {
     margin: auto;
-    max-width: 1000px;
+    width: 100%;
 }
 .code-coverage {
     color: #fff;

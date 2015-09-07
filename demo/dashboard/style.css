@@ -14,11 +14,14 @@ ul {
     background-color: #fff;
 }
 .box-header {
-    background-color: lightblue;
+    background-background-color: rgb(16,108,200);
     padding: 0 30px 0 10px;
     border-bottom: 1px solid #ccc;
     cursor: move;
     position: relative;
+    height: 30px;
+    min-height: 20px;
+    max-height: 50px;
 }
 .box-header h3 {
     margin-top: 10px;
@@ -33,12 +36,151 @@ ul {
     cursor: pointer;
     position: absolute;
 }
-a {
-    color: indigo;
-}
+
 form {
     margin-bottom: 0;
 }
+
 .gridster {
     border: 1px solid #ccc;
+}
+
+.box-name { 
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.box-header h3 {
+    margin-top: 6px !important;
+}
+
+.box-icon {
+    top: 5px;
+    color: #FFFFFF;
+}
+
+/* Darker background-colors */
+.wd-1 {
+    background-color: #3f51b5;
+}
+
+.wd-2 {
+    background-color: #5677fc;
+}
+
+.wd-3 {
+    background-color: #009688;
+}
+
+.wd-4 {
+    background-color: #673ab7;
+}
+
+.wd-5 {
+    background-color: #9c27b0;
+}
+
+.wd-6 {
+    background-color: #e51c23;
+}
+
+.wd-7 {
+    background-color: #e91e63;
+}
+
+.wd-8 {
+    background-color: #259b24;
+}
+
+.wd-9 {
+    background-color: #ff9800;
+}
+
+.wd-10 {
+    background-color: #ff5722;
+}
+
+.wd-11 {
+    background-color: #8bc34a;
+}
+
+.wd-12 {
+    background-color: #03a9f4;
+}
+
+.wd-13 {
+    background-color: #00bcd4;
+}
+
+.wd-14 {
+    background-color: #cddc39;
+}
+
+.wd-15 {
+    background-color: #ffc107;
+}
+
+/* Mellow background-colors */
+.wdm-1 {
+    background-color: #ff5177;
+}
+
+.wdm-2 {
+    background-color: #ff4081;
+}
+
+.wdm-3 {
+    background-color: #e040fb;
+}
+
+.wdm-4 {
+    background-color: #7c4dff;
+}
+
+.wdm-5 {
+    background-color: #536dfe;
+}
+
+.wdm-6 {
+    background-color: #6889ff;
+}
+
+.wdm-7 {
+    background-color: #40c4ff;
+}
+
+.wdm-8 {
+    background-color: #18ffff;
+}
+
+.wdm-9 {
+    background-color: #64ffda;
+}
+
+.wdm-10 {
+    background-color: #5af158;
+}
+
+.wdm-11 {
+    background-color: #b2ff59;
+}
+
+.wdm-12 {
+    background-color: #eeff41;
+}
+
+.wdm-13 {
+    background-color: #ffff00;
+}
+
+.wdm-14 {
+    background-color: #ffd740;
+}
+
+.wdm-15 {
+    background-color: #ffab40;
+}
+
+.wdm-16 {
+    background-color: #ff6e40;
 }
