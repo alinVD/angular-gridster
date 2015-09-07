@@ -6,7 +6,7 @@ angular.module('app')
     function($scope, $timeout) {
         $scope.gridsterOptions = {
             margins: [5, 5],
-            columns: 10,
+            columns: 4,
             swapping: true,
 
             draggable: {
@@ -71,6 +71,28 @@ angular.module('app')
                 sizeY: 1,
                 colorId: cId
             });
+        };
+
+        $scope.addCol = function() {
+            if ($scope.gridsterOptions.columns > 13) {
+                //placeholder messages
+                console.log("BETTER CHECK YO SELF");
+            }
+
+            else {
+                $scope.gridsterOptions.columns = $scope.gridsterOptions.columns + 1;
+            }
+        };
+
+        $scope.subtractCol = function() {
+            if ($scope.gridsterOptions.columns < 4) {
+                //placeholder messages
+                console.log("CHECK YOURSELF PLEASE.")
+            }    
+
+            else {     
+                $scope.gridsterOptions.columns = $scope.gridsterOptions.columns - 1;
+            }
         };
 
         $scope.$watch('selectedDashboardId', function(newVal, oldVal) {

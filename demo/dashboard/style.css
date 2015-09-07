@@ -59,6 +59,21 @@ form {
     color: #FFFFFF;
 }
 
+.big-icon {
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+    padding:10px 25px 10px 10px;
+}
+
+html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 /* Darker background-colors */
 .wd-1 {
     background-color: #3f51b5;
@@ -183,4 +198,65 @@ form {
 
 .wdm-16 {
     background-color: #ff6e40;
+}
+
+/* Border colors */
+.wdb-1 {
+    border:1px solid #3f51b5;
+}
+
+.wdb-2 {
+    border:1px solid #5677fc;
+}
+
+.wdb-3 {
+    border:1px solid #009688;
+}
+
+.wdb-4 {
+    border:1px solid #673ab7;
+}
+
+.wdb-5 {
+    border:1px solid #9c27b0;
+}
+
+.wdb-6 {
+    border:1px solid #e51c23;
+}
+
+.wdb-7 {
+    border:1px solid #e91e63;
+}
+
+.wdb-8 {
+    border:1px solid #259b24;
+}
+
+.wdb-9 {
+    border:1px solid #ff9800;
+}
+
+.wdb-10 {
+    border:1px solid #ff5722;
+}
+
+.wdb-11 {
+    border:1px solid #8bc34a;
+}
+
+.wdb-12 {
+    border:1px solid #03a9f4;
+}
+
+.wdb-13 {
+    border:1px solid #00bcd4;
+}
+
+.wdb-14 {
+    border:1px solid #cddc39;
+}
+
+.wdb-15 {
+    border:1px solid #ffc107;
 }

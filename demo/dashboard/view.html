@@ -1,21 +1,20 @@
 <div class="page-header">
-	<a class="pull-right btn btn-primary" ng-click="addWidget()"><i class="glyphicon glyphicon-plus"></i> Add Widget</a>
-	<a class="pull-right btn btn-warning" ng-click="clear()"><i class="glyphicon glyphicon-trash"></i> Clear</a>
-	<h1 style="display: inline-block; width: 200px;">Dashboard</h1>
-	<select class="form-control" style="width: 150px; margin-bottom: 20px; display:inline-block;" ng-change="changeDashboard()" ng-model="selectedDashboardId" ng-options="d.id as d.name for d in dashboards | object2Array | orderBy:'id'">
-	</select>
+	<i class="pull-right glyphicon glyphicon-plus big-icon" ng-click="addWidget()"></i>
+	<i class="pull-right glyphicon glyphicon-trash big-icon" ng-click="clear()"></i>
 
+	<i class="glyphicon glyphicon-th-large big-icon add" ng-click="addCol()"></i>
+	<i class="glyphicon glyphicon-stop big-icon" ng-click="subtractCol()"></i>
 </div>
 
-<div gridster="gridsterOptions">
+<div gridster="gridsterOptions" class="gridsterOptions">
 	<ul>
 		<li gridster-item="widget" ng-repeat="widget in dashboard.widgets">
-			<div class="box" ng-controller="CustomWidgetCtrl">
+			<div class="box" ng-controller="CustomWidgetCtrl" ng-class="'wdb-'+ widget.colorId">
 				<div class="box-header" ng-class="'wd-'+ widget.colorId">
 					<h3 class="box-name">{{ widget.name }}</h3>
 					<div class="box-header-btns pull-right">
 						<a title="settings" ng-click="openSettings(widget)"><i class="glyphicon glyphicon-cog box-icon"></i></a>
-						<a title="Remove widget" ng-click="remove(widget)"><i class="glyphicon glyphicon-trash box-icon"></i></a>
+						<a title="Remove widget" ng-click="remove(widget)"><i class="glyphicon glyphicon-remove box-icon"></i></a>
 					</div>
 				</div>
 				<div class="box-content">
